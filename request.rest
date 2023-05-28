@@ -1,0 +1,9 @@
+GET http://localhost:5000/propiedades
+
+###
+
+GET http://localhost:5000/propiedades/123
+
+###
+
+POST http://localhost:5000/propiedades
