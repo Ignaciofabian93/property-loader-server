@@ -2,8 +2,50 @@ GET http://localhost:5000/propiedades
 
 ###
 
-GET http://localhost:5000/propiedades/123
+GET http://localhost:5000/propiedades/6473d27d62a712d7db7b8dc4
+
+###
+
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+  "email": "info@grupomalaga.cl",
+  "password": "grupomalaga-2023"
+}
 
 ###
 
 POST http://localhost:5000/propiedades
+Content-Type: application/json
+
+{
+  "type": "Casa",
+  "location": "Santiago",
+  "state": "Nueva",
+  "description": "lalalala",
+  "price": "3000",
+  "images": [
+    "https://unsplash.com/es/fotos/bjej8BY1JYQ",
+    "https://unsplash.com/es/fotos/pmhdkgRCbtE"
+  ],
+  "operation": "Venta"
+}
+
+###
+
+PUT http://localhost:5000/propiedades/6473d27d62a712d7db7b8dc4
+Content-Type: application/json
+
+{
+  "type": "Casa",
+  "location": "Santiago",
+  "state": "Nueva",
+  "description": "lalalala",
+  "price": "3000",
+  "images": [
+    "https://unsplash.com/es/fotos/bjej8BY1JYQ",
+    "https://unsplash.com/es/fotos/pmhdkgRCbtE"
+  ],
+  "operation": "Arriendo"
+}
