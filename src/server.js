@@ -12,7 +12,11 @@ const PORT = process.env.PORT || 5000;
 
 connectDatabase();
 const app = express();
-app.use(cors());
+
+const corsOptions = {
+  origin: "https://property-loader.vercel.app",
+};
+app.use(cors(corsOptions));
 
 app.use(bodyParser.json({ limit: "10mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "10mb" }));
