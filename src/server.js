@@ -34,8 +34,8 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-app.get("/", (req, res) => {
-  res.send("API running");
-});
+// app.get("/", (req, res) => {
+//   res.send("API running");
+// });
 
-module.exports = app;
+// module.exports = app;
