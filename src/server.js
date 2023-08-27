@@ -15,6 +15,7 @@ const app = express();
 
 const corsOptions = {
   origin: "https://property-loader.vercel.app",
+  // origin: "*",
 };
 app.use(cors(corsOptions));
 
