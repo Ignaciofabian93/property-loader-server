@@ -14,7 +14,7 @@ connectDatabase();
 const app = express();
 
 const corsOptions = {
-  origin: "https://property-loader.vercel.app",
+  origin: ["https://property-loader.vercel.app", "http://localhost:3000"],
   // origin: "*",
 };
 app.use(cors(corsOptions));
